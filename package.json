@@ -1,0 +1,25 @@
+{
+  "name": "js_part2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LidiaTabedzka/JS-part2.git"
+  },
+  "author": "Lidia Tabędzka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LidiaTabedzka/JS-part2/issues"
+  },
+  "homepage": "https://github.com/LidiaTabedzka/JS-part2#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
