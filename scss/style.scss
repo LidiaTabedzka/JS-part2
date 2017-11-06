@@ -1,4 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
-    background-color: gray;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eedcef;
+}
+.container {
+    padding: 50px;
+}
+ /*Styles for game header*/
+h3 {
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/*Styles for all buttons*/
+.btn,
+.fa {
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Styles for New Game button*/
+#js-newGameButton {
+    background-color: #5dcc49;
+    &:hover {
+        background-color: #34682b;
+        color: white;
+    }
+}
+
+/*Styles for rock, paper and scissors button*/
+.fa-paper {
+    background-color: #5BC0DE;
+}
+.fa-scissor {
+    background-color: #D9534F;
+}
+#js-playerPickElement button:hover {
+    background-color: white;
+}
+
+/*Styles for winner alert section*/
+#js-winnerAlert {
+    font-size: 30px;
+    font-weight: bold;
+    color: #34682b;
+}
+
+/*Styles for the results section*/
+#js-resultsTableElement {
+    font-size: 24px;
+    .badge {
+        font-size: 24px;
+        padding: 3px 20px;
+    }
+    .row {
+        padding-bottom: 20px;
+    }
+    #js-playerName,
+    .computerName {
+        font-weight: bold;
+    }
+
 }
