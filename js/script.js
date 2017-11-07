@@ -115,16 +115,18 @@ function checkRoundWinner(playerPick, computerPick) {
         (computerPick == 'rock' &&  playerPick == 'scissors') ||
         (computerPick == 'scissors' &&  playerPick == 'paper') ||
         (computerPick == 'paper' &&  playerPick == 'rock')) {
-  
-        computerResultElem.innerHTML = "Win!";
-        computer.score++;
+        announceRoundWinner(computerResultElem, computer);
     } else {
-        playerResultElem.innerHTML = "Win!";
-        player.score++;
+        announceRoundWinner(playerResultElem, player);
     }
 
     setGamePoints();
     gameOver();
+}
+
+function announceRoundWinner(winnerResultElem, winner) {
+    winnerResultElem.innerHTML = "Win!";
+    winner.score++;
 }
 
 //Zakończenie gry
@@ -132,6 +134,6 @@ function gameOver() {
     if (player.score === 10 || computer.score === 10) {
         gameState = 'ended';
         setGameElements();
-        player.score === 10 ? (winnerAlertElem.innerText = "The winner is: " + player.name) : (winnerAlertElem.innerText = "The winner is: Computer");
+        winnerAlertElem.innerText = player.score === 10 ? "The winner is: " + player.name : "The winner is: Computer";
     }
 }
